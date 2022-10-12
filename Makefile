@@ -27,3 +27,6 @@ remove-credentials:
 
 create-credentials:
 	docker-compose run --rm -e EDITOR=vi app bundle exec rails credentials:edit
+
+app-bash:
+	docker-compose exec app bash
